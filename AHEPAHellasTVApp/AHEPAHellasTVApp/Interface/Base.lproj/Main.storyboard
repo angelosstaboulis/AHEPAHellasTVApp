@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="AHEPAHellasTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gzR-No-P1A">
+                                <rect key="frame" x="0.0" y="0.0" width="1938" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-ab-vZT">
+                                <rect key="frame" x="0.0" y="865" width="425" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="AHEPANews"/>
+                                <connections>
+                                    <action selector="ahepanews:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Zao-hI-a6Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-nH-z8Z">
+                                <rect key="frame" x="485" y="865" width="425" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="AHEPAHistory"/>
+                                <connections>
+                                    <action selector="ahepahistory:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="rMD-ik-Tqt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVE-Wp-UQP">
+                                <rect key="frame" x="1497" y="865" width="391" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="AHEPA Chapters"/>
+                                <connections>
+                                    <action selector="ahepachapters:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="iZU-Qf-9ys"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCF-xD-lVh">
+                                <rect key="frame" x="999" y="865" width="394" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="AHEPA Map"/>
+                                <connections>
+                                    <action selector="ahepavideos:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="p9w-y9-K0J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6435" y="-1883"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="m8b-d5-o31">
+            <objects>
+                <viewController storyboardIdentifier="AHEPANewsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0a-6u-U6e" customClass="AHEPANewsViewController" customModule="AHEPAHellasTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qc2-Ht-J8i"/>
+                        <viewControllerLayoutGuide type="bottom" id="fyP-Hj-HvA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uck-sx-4Is">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="JQn-nn-P5s">
+                                <rect key="frame" x="0.0" y="350" width="1920" height="1080"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1080" id="9P1-2j-yKB"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="245" id="XDt-la-BIE" customClass="AHEPACell" customModule="AHEPAHellasTVApp" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="66" width="1760" height="245"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XDt-la-BIE" id="G0L-Uk-Wq2">
+                                            <rect key="frame" x="0.0" y="0.0" width="1760" height="245"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ahepahellas" translatesAutoresizingMaskIntoConstraints="NO" id="prh-fk-Fln">
+                                                    <rect key="frame" x="-28" y="-60" width="259" height="364"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="rAw-bE-kWy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6b-vu-GwN">
+                                                    <rect key="frame" x="216" y="0.0" width="873" height="235"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="873" id="zXY-gr-TdM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="y6b-vu-GwN" firstAttribute="bottom" secondItem="G0L-Uk-Wq2" secondAttribute="bottomMargin" id="6UW-BT-cHO"/>
+                                                <constraint firstItem="y6b-vu-GwN" firstAttribute="leading" secondItem="G0L-Uk-Wq2" secondAttribute="leading" constant="216" id="D3M-00-ZJe"/>
+                                                <constraint firstItem="prh-fk-Fln" firstAttribute="leading" secondItem="G0L-Uk-Wq2" secondAttribute="leadingMargin" constant="-48" id="IET-gY-odh"/>
+                                                <constraint firstItem="prh-fk-Fln" firstAttribute="top" secondItem="G0L-Uk-Wq2" secondAttribute="topMargin" constant="-70" id="XJ3-27-saw"/>
+                                                <constraint firstItem="y6b-vu-GwN" firstAttribute="top" secondItem="G0L-Uk-Wq2" secondAttribute="topMargin" constant="-10" id="krp-DV-CS8"/>
+                                                <constraint firstItem="prh-fk-Fln" firstAttribute="centerY" secondItem="G0L-Uk-Wq2" secondAttribute="centerY" id="r7a-T4-BmE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="AXP-vR-8cu"/>
+                                        <connections>
+                                            <outlet property="imgLogo" destination="prh-fk-Fln" id="G5q-Gr-dyL"/>
+                                            <outlet property="lblDescription" destination="y6b-vu-GwN" id="R8Z-U3-uFt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="JeG-5J-TAt">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHEPANews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-yZ-UK1">
+                                        <rect key="frame" x="677" y="53" width="879" height="217"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="879" id="5Q0-KZ-2dC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu2-D4-5h0">
+                                        <rect key="frame" x="195" y="99.5" width="142" height="123"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="tkv-su-VCP"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="y0a-6u-U6e" eventType="primaryActionTriggered" id="yaj-cM-5eb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xFd-yZ-UK1" firstAttribute="leading" secondItem="JeG-5J-TAt" secondAttribute="leading" constant="677" id="ABo-GS-I3K"/>
+                                    <constraint firstItem="Pu2-D4-5h0" firstAttribute="leading" secondItem="JeG-5J-TAt" secondAttribute="leading" constant="195" id="BSc-KQ-VaE"/>
+                                    <constraint firstItem="xFd-yZ-UK1" firstAttribute="top" secondItem="JeG-5J-TAt" secondAttribute="top" constant="53" id="DlP-qZ-xR8"/>
+                                    <constraint firstAttribute="bottom" secondItem="xFd-yZ-UK1" secondAttribute="bottom" constant="94" id="VXh-tL-g7w"/>
+                                    <constraint firstItem="Pu2-D4-5h0" firstAttribute="centerY" secondItem="xFd-yZ-UK1" secondAttribute="centerY" id="sGw-ri-D3c"/>
+                                    <constraint firstItem="Pu2-D4-5h0" firstAttribute="top" secondItem="JeG-5J-TAt" secondAttribute="top" constant="97" id="v1k-MU-Agm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n7f-8F-bKx"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="JQn-nn-P5s" firstAttribute="top" secondItem="Qc2-Ht-J8i" secondAttribute="bottom" constant="290" id="137-UO-fJ7"/>
+                            <constraint firstItem="JQn-nn-P5s" firstAttribute="trailing" secondItem="JeG-5J-TAt" secondAttribute="trailing" id="3UY-au-o3v"/>
+                            <constraint firstItem="JQn-nn-P5s" firstAttribute="leading" secondItem="JeG-5J-TAt" secondAttribute="leading" id="Ddy-56-jbw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="JQn-nn-P5s" id="dTX-IA-gBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpc-FY-Cim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-1265"/>
+        </scene>
+        <!--Chapters View Controller-->
+        <scene sceneID="mi4-Vt-EdM">
+            <objects>
+                <viewController storyboardIdentifier="AHEPAChaptersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TSA-sd-zsq" customClass="AHEPAChaptersViewController" customModule="AHEPAHellasTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wR1-zQ-8kf"/>
+                        <viewControllerLayoutGuide type="bottom" id="a7u-ze-1cQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YVx-ha-b7H">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="qCT-pA-SMm">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <viewLayoutGuide key="safeArea" id="zah-tG-qfv"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="LQD-3r-f0K">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="nTf-MR-y5S">
+                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="364"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHEPAChapters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64p-g1-3Nf">
+                                            <rect key="frame" x="677" y="53" width="879" height="217"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="879" id="iDx-qz-Ikq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwd-Mh-lOl">
+                                            <rect key="frame" x="195" y="99.5" width="142" height="123"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="142" id="VkL-jg-2lx"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                            <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                            <connections>
+                                                <action selector="btnBack:" destination="TSA-sd-zsq" eventType="primaryActionTriggered" id="A42-Fx-xNH"/>
+                                                <action selector="btnBack:" destination="y0a-6u-U6e" eventType="primaryActionTriggered" id="uRR-hP-59Z"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Jwd-Mh-lOl" firstAttribute="centerY" secondItem="64p-g1-3Nf" secondAttribute="centerY" id="0U8-q8-5Ri"/>
+                                        <constraint firstItem="Jwd-Mh-lOl" firstAttribute="top" secondItem="nTf-MR-y5S" secondAttribute="top" constant="97" id="Bob-9Q-Ir8"/>
+                                        <constraint firstAttribute="bottom" secondItem="64p-g1-3Nf" secondAttribute="bottom" constant="94" id="IsZ-IL-eTZ"/>
+                                        <constraint firstItem="64p-g1-3Nf" firstAttribute="top" secondItem="nTf-MR-y5S" secondAttribute="top" constant="53" id="MiB-cC-Seu"/>
+                                        <constraint firstItem="Jwd-Mh-lOl" firstAttribute="leading" secondItem="nTf-MR-y5S" secondAttribute="leading" constant="195" id="i3V-1G-4FH"/>
+                                        <constraint firstItem="64p-g1-3Nf" firstAttribute="leading" secondItem="nTf-MR-y5S" secondAttribute="leading" constant="677" id="iwK-lM-BPA"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="245" id="tCb-Y4-atG" customClass="AHEPACell" customModule="AHEPAHellasTVApp" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="430" width="1760" height="245"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tCb-Y4-atG" id="hrB-TV-6Yz">
+                                            <rect key="frame" x="0.0" y="0.0" width="1760" height="245"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ahepahellas" translatesAutoresizingMaskIntoConstraints="NO" id="b2Z-0O-pDW">
+                                                    <rect key="frame" x="-28" y="-60" width="259" height="364"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="pBd-LT-jDA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1G-FH-Tea">
+                                                    <rect key="frame" x="216" y="0.0" width="873" height="235"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="873" id="0A8-iN-aGU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="b2Z-0O-pDW" firstAttribute="centerY" secondItem="hrB-TV-6Yz" secondAttribute="centerY" id="2B7-vr-DJ1"/>
+                                                <constraint firstItem="b2Z-0O-pDW" firstAttribute="leading" secondItem="hrB-TV-6Yz" secondAttribute="leadingMargin" constant="-48" id="OL7-Ib-KL4"/>
+                                                <constraint firstItem="b2Z-0O-pDW" firstAttribute="top" secondItem="hrB-TV-6Yz" secondAttribute="topMargin" constant="-70" id="iBD-eD-psY"/>
+                                                <constraint firstItem="s1G-FH-Tea" firstAttribute="top" secondItem="hrB-TV-6Yz" secondAttribute="topMargin" constant="-10" id="nf4-C9-wXF"/>
+                                                <constraint firstItem="s1G-FH-Tea" firstAttribute="leading" secondItem="hrB-TV-6Yz" secondAttribute="leading" constant="216" id="spL-iT-pbo"/>
+                                                <constraint firstItem="s1G-FH-Tea" firstAttribute="bottom" secondItem="hrB-TV-6Yz" secondAttribute="bottomMargin" id="uhP-Tm-nFO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="Ibb-Gk-rn5"/>
+                                        <connections>
+                                            <outlet property="imgLogo" destination="b2Z-0O-pDW" id="mj1-1z-6eh"/>
+                                            <outlet property="lblDescription" destination="s1G-FH-Tea" id="4cR-bS-GzL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vG2-0d-MSV"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="LQD-3r-f0K" id="aja-x6-2EU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spk-nP-Ft9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5537" y="-1720"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="6Bb-PB-M3j">
+            <objects>
+                <viewController storyboardIdentifier="AHEPAMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Tv-m5-mQc" customClass="AHEPAMapViewController" customModule="AHEPAHellasTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZYW-WG-J4A"/>
+                        <viewControllerLayoutGuide type="bottom" id="T8Z-Xk-CT4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lqd-Oq-imJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-QA-N0X">
+                                <rect key="frame" x="0.0" y="319" width="1920" height="761"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="761" id="o2p-YR-OhU"/>
+                                </constraints>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63d-Sl-OZG">
+                                <rect key="frame" x="187" y="14" width="1448" height="203"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yel-IG-r86">
+                                        <rect key="frame" x="20" y="58" width="142" height="123"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="CVB-dP-xlb"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="arrow.left" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBack:" destination="4Tv-m5-mQc" eventType="primaryActionTriggered" id="7BU-6b-BIa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHEPA Headquarters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-8l-XJa">
+                                        <rect key="frame" x="490" y="0.0" width="958" height="233"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="958" id="ICX-PL-Yxx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yel-IG-r86" firstAttribute="centerY" secondItem="63d-Sl-OZG" secondAttribute="centerY" constant="18" id="2mJ-ak-ndn"/>
+                                    <constraint firstItem="Yel-IG-r86" firstAttribute="centerY" secondItem="Epo-8l-XJa" secondAttribute="centerY" constant="3" id="8cE-EY-EiS"/>
+                                    <constraint firstItem="Yel-IG-r86" firstAttribute="leading" secondItem="63d-Sl-OZG" secondAttribute="leading" constant="20" id="Fhw-QR-GSx"/>
+                                    <constraint firstItem="Epo-8l-XJa" firstAttribute="top" secondItem="63d-Sl-OZG" secondAttribute="topMargin" constant="-54" id="OF8-YO-y2F"/>
+                                    <constraint firstItem="Yel-IG-r86" firstAttribute="top" secondItem="63d-Sl-OZG" secondAttribute="top" constant="55.5" id="T6E-0j-kJg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Epo-8l-XJa" secondAttribute="trailing" id="sJQ-fl-yIW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H5n-FP-h8T"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="2LK-QA-N0X" secondAttribute="bottom" constant="-60" id="1sb-JD-gdr"/>
+                            <constraint firstItem="63d-Sl-OZG" firstAttribute="leading" secondItem="H5n-FP-h8T" secondAttribute="leading" constant="107" id="5pS-Fv-yoR"/>
+                            <constraint firstItem="2LK-QA-N0X" firstAttribute="leading" secondItem="Lqd-Oq-imJ" secondAttribute="leadingMargin" constant="-96" id="DEr-13-ngc"/>
+                            <constraint firstItem="2LK-QA-N0X" firstAttribute="centerX" secondItem="Lqd-Oq-imJ" secondAttribute="centerX" id="P1i-c4-UYi"/>
+                            <constraint firstItem="H5n-FP-h8T" firstAttribute="trailing" secondItem="63d-Sl-OZG" secondAttribute="trailing" constant="205" id="QAu-8d-dMQ"/>
+                            <constraint firstItem="63d-Sl-OZG" firstAttribute="top" secondItem="Lqd-Oq-imJ" secondAttribute="topMargin" constant="-46" id="oV1-hS-VtC"/>
+                            <constraint firstAttribute="bottom" secondItem="63d-Sl-OZG" secondAttribute="bottom" constant="863" id="tHH-tH-8Wj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="2LK-QA-N0X" id="2Eu-vs-ugC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzJ-Bf-kFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2805" y="-2280"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="Eph-Xi-4Ij">
+            <objects>
+                <viewController storyboardIdentifier="AHEPAHistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zCK-QF-3kp" customClass="AHEPAHistoryViewController" customModule="AHEPAHellasTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TCP-FJ-Xu1"/>
+                        <viewControllerLayoutGuide type="bottom" id="wq7-tC-Gdj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TbG-ZM-Kxm">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-9F-wKy">
+                                <rect key="frame" x="0.0" y="40" width="1920" height="242"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHEPA History " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8L4-Ho-4dz">
+                                        <rect key="frame" x="841" y="9" width="583" height="202"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="583" id="Tpc-oX-x0a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="87"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-os-j1d">
+                                        <rect key="frame" x="161" y="59.5" width="142" height="123"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="E3A-f1-JrX"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="arrow.left" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBack:" destination="zCK-QF-3kp" eventType="primaryActionTriggered" id="Toe-d9-kiU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6uD-os-j1d" firstAttribute="top" secondItem="UVX-9F-wKy" secondAttribute="top" constant="57" id="7eZ-q4-rBo"/>
+                                    <constraint firstItem="6uD-os-j1d" firstAttribute="centerY" secondItem="UVX-9F-wKy" secondAttribute="centerY" id="NpI-6Y-IKZ"/>
+                                    <constraint firstItem="8L4-Ho-4dz" firstAttribute="top" secondItem="UVX-9F-wKy" secondAttribute="top" constant="9" id="Utn-0o-ozo"/>
+                                    <constraint firstItem="6uD-os-j1d" firstAttribute="leading" secondItem="UVX-9F-wKy" secondAttribute="leading" constant="161" id="cGv-rh-gxU"/>
+                                    <constraint firstAttribute="bottom" secondItem="8L4-Ho-4dz" secondAttribute="bottom" constant="31" id="eSd-BQ-mfA"/>
+                                    <constraint firstItem="8L4-Ho-4dz" firstAttribute="leading" secondItem="UVX-9F-wKy" secondAttribute="leading" constant="841" id="zEp-pA-6PZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kI6-zz-ypS">
+                                <rect key="frame" x="0.0" y="290" width="1920" height="790"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vAK-QZ-4Rw"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UVX-9F-wKy" firstAttribute="leading" secondItem="TbG-ZM-Kxm" secondAttribute="leadingMargin" constant="-96" id="40i-fV-T05"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kI6-zz-ypS" secondAttribute="bottom" constant="-60" id="BHw-x4-c6l"/>
+                            <constraint firstItem="UVX-9F-wKy" firstAttribute="trailing" secondItem="kI6-zz-ypS" secondAttribute="trailing" id="LG4-va-h59"/>
+                            <constraint firstItem="UVX-9F-wKy" firstAttribute="leading" secondItem="kI6-zz-ypS" secondAttribute="leading" id="TD9-fy-HQp"/>
+                            <constraint firstItem="UVX-9F-wKy" firstAttribute="top" secondItem="TbG-ZM-Kxm" secondAttribute="topMargin" constant="-20" id="crY-tP-Oh6"/>
+                            <constraint firstItem="UVX-9F-wKy" firstAttribute="centerX" secondItem="TbG-ZM-Kxm" secondAttribute="centerX" id="i2Y-tm-66Z"/>
+                            <constraint firstItem="kI6-zz-ypS" firstAttribute="top" secondItem="TbG-ZM-Kxm" secondAttribute="top" constant="290" id="kD8-8C-3G2"/>
+                            <constraint firstItem="kI6-zz-ypS" firstAttribute="top" secondItem="UVX-9F-wKy" secondAttribute="bottom" constant="8" id="zaY-sx-8Pq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="kI6-zz-ypS" id="XMW-RG-5e9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vT4-sJ-ubZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6108" y="-3037"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ahepahellas" width="225" height="225"/>
+        <image name="arrow.left" catalog="system" width="128" height="96"/>
+        <image name="background" width="1661" height="794"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

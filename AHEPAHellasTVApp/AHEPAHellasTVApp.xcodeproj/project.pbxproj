@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D68DC9F326524EA400C7665C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DC9F226524EA400C7665C /* AppDelegate.swift */; };
+		D68DC9F826524EA400C7665C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68DC9F626524EA400C7665C /* Main.storyboard */; };
+		D68DC9FA26524EA500C7665C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68DC9F926524EA500C7665C /* Assets.xcassets */; };
+		D68DC9FD26524EA500C7665C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68DC9FB26524EA500C7665C /* LaunchScreen.storyboard */; };
+		D68DCA0826524EA500C7665C /* AHEPAHellasTVAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA0726524EA500C7665C /* AHEPAHellasTVAppTests.swift */; };
+		D68DCA1326524EA500C7665C /* AHEPAHellasTVAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA1226524EA500C7665C /* AHEPAHellasTVAppUITests.swift */; };
+		D68DCA2626525A7000C7665C /* AHEPACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA2426525A7000C7665C /* AHEPACell.swift */; };
+		D68DCA2726525A7000C7665C /* AHEPACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68DCA2526525A7000C7665C /* AHEPACell.xib */; };
+		D68DCA3026525BCB00C7665C /* AHEPANewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA2F26525BCB00C7665C /* AHEPANewsViewController.swift */; };
+		D68DCA3926525CC100C7665C /* RSSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA3826525CC100C7665C /* RSSModel.swift */; };
+		D68DCA4226525D2A00C7665C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA4126525D2A00C7665C /* APIManager.swift */; };
+		D68DCA4B26525D9100C7665C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D68DCA4A26525D9100C7665C /* Alamofire */; };
+		D68DCA5126525DBB00C7665C /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = D68DCA5026525DBB00C7665C /* SWXMLHash */; };
+		D68DCA5D26525ED600C7665C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA5C26525ED600C7665C /* MainViewController.swift */; };
+		D68DCA6C26526C7B00C7665C /* AHEPANewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA6B26526C7B00C7665C /* AHEPANewsViewModel.swift */; };
+		D68DCA7B26527C7300C7665C /* AHEPAChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA7A26527C7300C7665C /* AHEPAChaptersViewController.swift */; };
+		D68DCA8226528DA200C7665C /* AHEPAHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA8126528DA200C7665C /* AHEPAHistoryViewController.swift */; };
+		D68DCA8F2652A7DF00C7665C /* AHEPAMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68DCA8E2652A7DF00C7665C /* AHEPAMapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D68DCA0426524EA500C7665C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D68DC9E726524EA400C7665C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68DC9EE26524EA400C7665C;
+			remoteInfo = AHEPAHellasTVApp;
+		};
+		D68DCA0F26524EA500C7665C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D68DC9E726524EA400C7665C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68DC9EE26524EA400C7665C;
+			remoteInfo = AHEPAHellasTVApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D66AC8CC2653233200B819D1 /* history.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = history.mp4; sourceTree = "<group>"; };
+		D68DC9EF26524EA400C7665C /* AHEPAHellasTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHEPAHellasTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68DC9F226524EA400C7665C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D68DC9F726524EA400C7665C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D68DC9F926524EA500C7665C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D68DC9FC26524EA500C7665C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D68DC9FE26524EA500C7665C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68DCA0326524EA500C7665C /* AHEPAHellasTVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHEPAHellasTVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68DCA0726524EA500C7665C /* AHEPAHellasTVAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHellasTVAppTests.swift; sourceTree = "<group>"; };
+		D68DCA0926524EA500C7665C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68DCA0E26524EA500C7665C /* AHEPAHellasTVAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHEPAHellasTVAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68DCA1226524EA500C7665C /* AHEPAHellasTVAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHellasTVAppUITests.swift; sourceTree = "<group>"; };
+		D68DCA1426524EA500C7665C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68DCA2426525A7000C7665C /* AHEPACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPACell.swift; sourceTree = "<group>"; };
+		D68DCA2526525A7000C7665C /* AHEPACell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AHEPACell.xib; sourceTree = "<group>"; };
+		D68DCA2F26525BCB00C7665C /* AHEPANewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPANewsViewController.swift; sourceTree = "<group>"; };
+		D68DCA3826525CC100C7665C /* RSSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSModel.swift; sourceTree = "<group>"; };
+		D68DCA4126525D2A00C7665C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D68DCA5C26525ED600C7665C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D68DCA6B26526C7B00C7665C /* AHEPANewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPANewsViewModel.swift; sourceTree = "<group>"; };
+		D68DCA7A26527C7300C7665C /* AHEPAChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAChaptersViewController.swift; sourceTree = "<group>"; };
+		D68DCA8126528DA200C7665C /* AHEPAHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAHistoryViewController.swift; sourceTree = "<group>"; };
+		D68DCA8E2652A7DF00C7665C /* AHEPAMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHEPAMapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D68DC9EC26524EA400C7665C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68DCA5126525DBB00C7665C /* SWXMLHash in Frameworks */,
+				D68DCA4B26525D9100C7665C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DCA0026524EA500C7665C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DCA0B26524EA500C7665C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D68DC9E626524EA400C7665C = {
+			isa = PBXGroup;
+			children = (
+				D68DC9F126524EA400C7665C /* AHEPAHellasTVApp */,
+				D68DCA0626524EA500C7665C /* AHEPAHellasTVAppTests */,
+				D68DCA1126524EA500C7665C /* AHEPAHellasTVAppUITests */,
+				D68DC9F026524EA400C7665C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D68DC9F026524EA400C7665C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D68DC9EF26524EA400C7665C /* AHEPAHellasTVApp.app */,
+				D68DCA0326524EA500C7665C /* AHEPAHellasTVAppTests.xctest */,
+				D68DCA0E26524EA500C7665C /* AHEPAHellasTVAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D68DC9F126524EA400C7665C /* AHEPAHellasTVApp */ = {
+			isa = PBXGroup;
+			children = (
+				D66AC8CC2653233200B819D1 /* history.mp4 */,
+				D68DCA67265262B700C7665C /* Interface */,
+				D68DCA5626525DCB00C7665C /* ViewControllers */,
+				D68DCA4026525D1600C7665C /* APIManager */,
+				D68DCA3726525CB100C7665C /* Model */,
+				D68DCA2326525A2A00C7665C /* View */,
+				D68DC9F226524EA400C7665C /* AppDelegate.swift */,
+				D68DC9FE26524EA500C7665C /* Info.plist */,
+			);
+			path = AHEPAHellasTVApp;
+			sourceTree = "<group>";
+		};
+		D68DCA0626524EA500C7665C /* AHEPAHellasTVAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA0726524EA500C7665C /* AHEPAHellasTVAppTests.swift */,
+				D68DCA0926524EA500C7665C /* Info.plist */,
+			);
+			path = AHEPAHellasTVAppTests;
+			sourceTree = "<group>";
+		};
+		D68DCA1126524EA500C7665C /* AHEPAHellasTVAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA1226524EA500C7665C /* AHEPAHellasTVAppUITests.swift */,
+				D68DCA1426524EA500C7665C /* Info.plist */,
+			);
+			path = AHEPAHellasTVAppUITests;
+			sourceTree = "<group>";
+		};
+		D68DCA2326525A2A00C7665C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA2426525A7000C7665C /* AHEPACell.swift */,
+				D68DCA2526525A7000C7665C /* AHEPACell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D68DCA2E26525BB100C7665C /* AHEPANews */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA2F26525BCB00C7665C /* AHEPANewsViewController.swift */,
+				D68DCA6B26526C7B00C7665C /* AHEPANewsViewModel.swift */,
+			);
+			path = AHEPANews;
+			sourceTree = "<group>";
+		};
+		D68DCA3726525CB100C7665C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA3826525CC100C7665C /* RSSModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D68DCA4026525D1600C7665C /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA4126525D2A00C7665C /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D68DCA5626525DCB00C7665C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA8D2652A7CF00C7665C /* AHEPAMap */,
+				D68DCA8026528D8F00C7665C /* AHEPAHistory */,
+				D68DCA7926527C4700C7665C /* AHEPAChapters */,
+				D68DCA5B26525EC100C7665C /* MainViewController */,
+				D68DCA2E26525BB100C7665C /* AHEPANews */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D68DCA5B26525EC100C7665C /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA5C26525ED600C7665C /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		D68DCA67265262B700C7665C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D68DC9F626524EA400C7665C /* Main.storyboard */,
+				D68DC9F926524EA500C7665C /* Assets.xcassets */,
+				D68DC9FB26524EA500C7665C /* LaunchScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		D68DCA7926527C4700C7665C /* AHEPAChapters */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA7A26527C7300C7665C /* AHEPAChaptersViewController.swift */,
+			);
+			path = AHEPAChapters;
+			sourceTree = "<group>";
+		};
+		D68DCA8026528D8F00C7665C /* AHEPAHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA8126528DA200C7665C /* AHEPAHistoryViewController.swift */,
+			);
+			path = AHEPAHistory;
+			sourceTree = "<group>";
+		};
+		D68DCA8D2652A7CF00C7665C /* AHEPAMap */ = {
+			isa = PBXGroup;
+			children = (
+				D68DCA8E2652A7DF00C7665C /* AHEPAMapViewController.swift */,
+			);
+			path = AHEPAMap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D68DC9EE26524EA400C7665C /* AHEPAHellasTVApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68DCA1726524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVApp" */;
+			buildPhases = (
+				D68DC9EB26524EA400C7665C /* Sources */,
+				D68DC9EC26524EA400C7665C /* Frameworks */,
+				D68DC9ED26524EA400C7665C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHEPAHellasTVApp;
+			packageProductDependencies = (
+				D68DCA4A26525D9100C7665C /* Alamofire */,
+				D68DCA5026525DBB00C7665C /* SWXMLHash */,
+			);
+			productName = AHEPAHellasTVApp;
+			productReference = D68DC9EF26524EA400C7665C /* AHEPAHellasTVApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D68DCA0226524EA500C7665C /* AHEPAHellasTVAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68DCA1A26524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVAppTests" */;
+			buildPhases = (
+				D68DC9FF26524EA500C7665C /* Sources */,
+				D68DCA0026524EA500C7665C /* Frameworks */,
+				D68DCA0126524EA500C7665C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D68DCA0526524EA500C7665C /* PBXTargetDependency */,
+			);
+			name = AHEPAHellasTVAppTests;
+			productName = AHEPAHellasTVAppTests;
+			productReference = D68DCA0326524EA500C7665C /* AHEPAHellasTVAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D68DCA0D26524EA500C7665C /* AHEPAHellasTVAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68DCA1D26524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVAppUITests" */;
+			buildPhases = (
+				D68DCA0A26524EA500C7665C /* Sources */,
+				D68DCA0B26524EA500C7665C /* Frameworks */,
+				D68DCA0C26524EA500C7665C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D68DCA1026524EA500C7665C /* PBXTargetDependency */,
+			);
+			name = AHEPAHellasTVAppUITests;
+			productName = AHEPAHellasTVAppUITests;
+			productReference = D68DCA0E26524EA500C7665C /* AHEPAHellasTVAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D68DC9E726524EA400C7665C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D68DC9EE26524EA400C7665C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D68DCA0226524EA500C7665C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D68DC9EE26524EA400C7665C;
+					};
+					D68DCA0D26524EA500C7665C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D68DC9EE26524EA400C7665C;
+					};
+				};
+			};
+			buildConfigurationList = D68DC9EA26524EA400C7665C /* Build configuration list for PBXProject "AHEPAHellasTVApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D68DC9E626524EA400C7665C;
+			packageReferences = (
+				D68DCA4926525D9100C7665C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D68DCA4F26525DBB00C7665C /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
+			productRefGroup = D68DC9F026524EA400C7665C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D68DC9EE26524EA400C7665C /* AHEPAHellasTVApp */,
+				D68DCA0226524EA500C7665C /* AHEPAHellasTVAppTests */,
+				D68DCA0D26524EA500C7665C /* AHEPAHellasTVAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D68DC9ED26524EA400C7665C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68DC9FD26524EA500C7665C /* LaunchScreen.storyboard in Resources */,
+				D68DCA2726525A7000C7665C /* AHEPACell.xib in Resources */,
+				D68DC9FA26524EA500C7665C /* Assets.xcassets in Resources */,
+				D68DC9F826524EA400C7665C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DCA0126524EA500C7665C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DCA0C26524EA500C7665C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D68DC9EB26524EA400C7665C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68DCA5D26525ED600C7665C /* MainViewController.swift in Sources */,
+				D68DCA4226525D2A00C7665C /* APIManager.swift in Sources */,
+				D68DCA7B26527C7300C7665C /* AHEPAChaptersViewController.swift in Sources */,
+				D68DC9F326524EA400C7665C /* AppDelegate.swift in Sources */,
+				D68DCA2626525A7000C7665C /* AHEPACell.swift in Sources */,
+				D68DCA8F2652A7DF00C7665C /* AHEPAMapViewController.swift in Sources */,
+				D68DCA3926525CC100C7665C /* RSSModel.swift in Sources */,
+				D68DCA3026525BCB00C7665C /* AHEPANewsViewController.swift in Sources */,
+				D68DCA8226528DA200C7665C /* AHEPAHistoryViewController.swift in Sources */,
+				D68DCA6C26526C7B00C7665C /* AHEPANewsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DC9FF26524EA500C7665C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68DCA0826524EA500C7665C /* AHEPAHellasTVAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68DCA0A26524EA500C7665C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68DCA1326524EA500C7665C /* AHEPAHellasTVAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D68DCA0526524EA500C7665C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68DC9EE26524EA400C7665C /* AHEPAHellasTVApp */;
+			targetProxy = D68DCA0426524EA500C7665C /* PBXContainerItemProxy */;
+		};
+		D68DCA1026524EA500C7665C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68DC9EE26524EA400C7665C /* AHEPAHellasTVApp */;
+			targetProxy = D68DCA0F26524EA500C7665C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D68DC9F626524EA400C7665C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D68DC9F726524EA400C7665C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D68DC9FB26524EA500C7665C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D68DC9FC26524EA500C7665C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D68DCA1526524EA500C7665C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		D68DCA1626524EA500C7665C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D68DCA1826524EA500C7665C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		D68DCA1926524EA500C7665C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		D68DCA1B26524EA500C7665C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHEPAHellasTVApp.app/AHEPAHellasTVApp";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		D68DCA1C26524EA500C7665C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHEPAHellasTVApp.app/AHEPAHellasTVApp";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Release;
+		};
+		D68DCA1E26524EA500C7665C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = AHEPAHellasTVApp;
+			};
+			name = Debug;
+		};
+		D68DCA1F26524EA500C7665C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				INFOPLIST_FILE = AHEPAHellasTVAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AHEPAHellasTVAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = AHEPAHellasTVApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D68DC9EA26524EA400C7665C /* Build configuration list for PBXProject "AHEPAHellasTVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68DCA1526524EA500C7665C /* Debug */,
+				D68DCA1626524EA500C7665C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68DCA1726524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68DCA1826524EA500C7665C /* Debug */,
+				D68DCA1926524EA500C7665C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68DCA1A26524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68DCA1B26524EA500C7665C /* Debug */,
+				D68DCA1C26524EA500C7665C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68DCA1D26524EA500C7665C /* Build configuration list for PBXNativeTarget "AHEPAHellasTVAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68DCA1E26524EA500C7665C /* Debug */,
+				D68DCA1F26524EA500C7665C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D68DCA4926525D9100C7665C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		D68DCA4F26525DBB00C7665C /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D68DCA4A26525D9100C7665C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D68DCA4926525D9100C7665C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D68DCA5026525DBB00C7665C /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D68DCA4F26525DBB00C7665C /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D68DC9E726524EA400C7665C /* Project object */;
+}
